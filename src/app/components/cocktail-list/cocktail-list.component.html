@@ -1,0 +1,6 @@
+<app-form-search (cocktails)="getCocktails($event)" (cocktail)="getRandomCocktail($event)"></app-form-search>
+<div class="inner-card">
+  <div *ngFor="let cocktail of cocktails">
+    <app-card-cocktail [cocktail]="cocktail"></app-card-cocktail>
+  </div>
+</div>

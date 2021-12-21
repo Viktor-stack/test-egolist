@@ -1,0 +1,20 @@
+<div class="row white">
+  <form class="col s12" [formGroup]="form" (ngSubmit)="formSubmit()">
+    <div class="row">
+      <div class="input-field col s11">
+        <input formControlName="name" id="search"
+               type="text" class="validate">
+        <label for="search" data-error="wrong" data-success="right">Search</label>
+        <span class="red-text">{{error}}</span>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action"
+              [disabled]="form.invalid || form.disabled">
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
+    <button (click)="getRandomCocktail()" class="btn waves-effect waves-light" type="button" name="action">
+      Random cocktail
+    </button>
+  </form>
+</div>
+

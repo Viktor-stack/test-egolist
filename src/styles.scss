@@ -2,5 +2,38 @@
 @import "~materialize-css/sass/materialize";
 
 html, body {
-  background: #b16767;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  background-color: #6f6f6f;
+
+}
+
+.body__wrapper {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #26a69a;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(38, 166, 100, 0.55);
 }

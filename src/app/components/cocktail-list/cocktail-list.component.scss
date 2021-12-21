@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.inner-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.inner__wrapper {
+  width: 100%;
+}
+
+.list_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.row.s1.m7 {
+  margin: 0;
+  left: 0;
+  right: 0;
+}
